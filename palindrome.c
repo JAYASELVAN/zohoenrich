@@ -8,6 +8,10 @@ int main()
     s2=strrev(s1);
     if(strcmp(s1,s2)==0)
     {
-    
+        printf("The String is palindrome");
+    }
+    else
+    {
+        printf("The String is not a palindrome");
     }
 }
