@@ -9,13 +9,17 @@ int main()
 	strcpy(s2,s1);
 	for(i=0;i<(l-1);i++)
 	{	
-		t=0;
+		t=1;
 		for(j=(i+1);j<(l);j++)
 		{
 			if((s1[i]==s1[j])&&(s1[i]!='+'))
 			{
 				t++;
 				s1[j]='+';
+			}
+			else if(s1[i]=='+')
+			{
+				t=0;
 			}
 		}
 		printf("%d",t);
@@ -33,7 +37,6 @@ int main()
 			n=n+r;
 		}
 	}
-	printf("%d\t%d",m,n);
 	if(l%2==0)
 	{
 		if(((l/2)==n)&&(m==0))
