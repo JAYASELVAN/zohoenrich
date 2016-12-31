@@ -23,9 +23,9 @@ int m ain()
         if(s1[i]!='+')
         {
             s3[q]=s1[i];
+            printf("%c",s[q]);
             q++;
         }
     }
-    printf("%s",s3);
     return 0;
 }
