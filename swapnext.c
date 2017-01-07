@@ -8,11 +8,8 @@ int main(void) {
 	    t=a[i];
 	    a[i]=a[(i+1)];
 	    a[(i+1)]=t;
+		printf("%d\t%d\t",a[i],a[(i+1)]);
 	    i=i+2;
-	}
-	for(i=0;i<10;i++)
-	{
-	    printf("%d\t",a[i]);
 	}
 	return 0;
 }
