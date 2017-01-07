@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main(void) {
+	int a[10]={1,2,3,4,5,6,7,8,9,10};
+	int i=0,t;
+	while(i<10)
+	{
+	    t=a[i];
+	    a[i]=a[(i+1)];
+	    a[(i+1)]=t;
+	    i=i+2;
+	}
+	for(i=0;i<10;i++)
+	{
+	    printf("%d\t",a[i]);
+	}
+	return 0;
+}
+
