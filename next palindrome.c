@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void find_reverse(int n);
+void find_palindrome(int n);
 int main(void) 
 {
 	int num;
