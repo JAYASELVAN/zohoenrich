@@ -1,23 +1,28 @@
 #include <stdio.h>
-void find_prime(int n);
+int prime(int n);
 int main(void) 
 {
-	int num;
-	printf("Enter the number after the prime  to be find");
+	int num,l=0;
+	printf("Enter the number after the prime  to be find\n");
 	scanf("%d",&num);
-	int k=1;
 	num++;
-	while(k!=0)
+	while(1!=0)
 	{
-    void find_prime(num);
+    l=prime(num);
     num++;
+    if(l!=0)
+    {
+        printf("%d",l);
+        exit(0);
+    }
 	}
 	return 0;
 }
-void find_prime(int n)
+int prime(int n)
 {
     int dig=0;
     int i;
+    int s=0;
     for(i=2;i<n;i++)
     {
         if((n%i)==0)
@@ -27,8 +32,11 @@ void find_prime(int n)
     }
     if(dig==0)
     {
-        printf("%d",n);
-        exit(0);
+        return n;
+    }
+    else
+    {
+        return s;
     }
 }
 
