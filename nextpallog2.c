@@ -2,9 +2,11 @@
 int lenth(int n);
 void find_pal(int nu,int le);
 int main() {
+	int n1;
+	printf("Enter the to find the next nearest palindrome\t");
+	scanf("%d",&n1);
 	int num;
-	printf("Enter the to find the next nearest palindrome");
-	scanf("%d",&num);
+	num=n1+1;
 	int l;
 	l=length(num);
 	find_pal(num,l);
@@ -32,7 +34,6 @@ void find_pal(int nu,int le)
         a=a*10;
         half--;
     }
-    printf("%d\n",a);
     nu=nu/a;
     nu=nu*a;
     int r;
@@ -43,7 +44,6 @@ void find_pal(int nu,int le)
         b=b/10;
         rev=(rev*10)+r;
     }
-    printf("%d\n",rev);
     int part=rev%a;
     nu=nu+part;
     printf("%d",nu);
