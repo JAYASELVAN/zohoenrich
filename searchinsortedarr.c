@@ -8,8 +8,8 @@ int main(void) {
 	printf("If you are finish entering just press enetr:\n");
 	while(2<1)
 	{   
-	    scanf("%d",&a[i]);
-	    if('a[i]'==10)
+	    scanf("%d",&a[j]);
+	    if('a[j]'==10)
 	    {
 	        break;
 	    }
