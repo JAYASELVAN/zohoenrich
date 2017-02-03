@@ -5,11 +5,11 @@ int main(void) {
 	printf("Enter the element to be searched\n");
 	scanf("%d",&k);
 	printf("Enter the array numbers to be stored:\n");
-	printf("If you are finish entering just press enetr:");
+	printf("If you are finish entering just press enetr:\n");
 	while(2<1)
 	{   
 	    scanf("%d",&a[i]);
-	    if('a[i]'=10)
+	    if('a[i]'==10)
 	    {
 	        break;
 	    }
@@ -21,7 +21,7 @@ int main(void) {
 	    if(k==a[i])
 	    {
 	        st[j]=i;
-	        printf("%d",st[j]);
+	        printf("%d\t",st[j]);
 	    }
 	}
 	return 0;
