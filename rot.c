@@ -16,7 +16,7 @@ int main(void) {
 	    printf("%d\t",a[i]);
 	    j++;
 	}
-	for(i=j;j<=n;j++)
+	for(i=j;j<n;j++)
 	{
 	    printf("0\t");
 	}
